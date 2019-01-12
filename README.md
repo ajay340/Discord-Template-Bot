@@ -1,4 +1,8 @@
 # Discord Template Bot
+<p align="center">
+	<img src="https://img.shields.io/badge/Made%20with-Python-yellow.svg" />
+</p>
+	
 This is a simple template Discord bot, created using Discord.py
 
 ## Getting Started
