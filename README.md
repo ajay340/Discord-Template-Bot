@@ -2,9 +2,9 @@
 This is a simple template Discord bot, created using Discord.py
 
 ## Getting Started
-First create your discord bot by creating an application, in the (discord developer portal)[https://discordapp.com/developers/applications/], and then go under the bot section and create your bot.
+First create your discord bot by creating an application, in the [discord developer portal](https://discordapp.com/developers/applications/), and then go under the bot section and create your bot.
 
-Now find your client secret id, under general information, and visit the bot authorization page using your client secret id: https://discordapp.com/oauth2/authorize?client_id=<client secret id>&scope=bot and authorize your bot to the server.
+Now find your client secret id, under general information, and visit the bot authorization page using your client secret id: https://discordapp.com/oauth2/authorize?client_id=CLIENTSECRETID&scope=bot and authorize your bot to the server.
 
 Now put input your bot's token, in bot.py, under the TOKEN variable, and run the python program.
 
