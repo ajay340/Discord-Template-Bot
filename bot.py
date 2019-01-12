@@ -2,7 +2,7 @@ import discord
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("!")
-TOKEN = 'token'
+TOKEN = ''
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -69,13 +69,13 @@ async def on_message(message):
         await textCom("Here is a picture")
         await fileCom('picture.jpg')
     
-    #If the user types "!clear" in a channel, the bot will reply with "Clearing messages" following the deletion of 120 messages in that same channel
+    #If the user types "!clear" in a channel, the bot will reply with "Clearing messages" following the deletion of 120 messages in that same channel (bot needs sufficent permissions)
     if message.content.startswith('!clear'):
         await clearMessages()
 
     #If the user types "!ChangeProfile" in a channel, the bot will change its profile picture to the given picture file in the files folder, change its name, and set its status as given.
     if message.content.startswith('!ChangeProfile'):
-        await changeBot("unhelper-bot.png", "Helper-Bot", "Away")
+        await changeBot("unhelper-bot.png", "Helper-Bot", "Idle")
 
     #If the user types "!ChangeProfileBack" in a channel, the bot will change its profile picture to the given picture file in the files folder, change its name, and set its status as given.
     if message.content.startswith('!ChangeProfileBack'):
@@ -86,8 +86,8 @@ async def on_message(message):
 #-=-=-=-=-=-Function Specific Commands-=-=-=-=-=-
 @client.command()
 async def DivideByTwo(number):
-    resultNum = number / 2
-    await client.say(number + " divided by two is " + resultNum)
+    resultNum = int(number) / 2
+    await client.say(str(number) + " divided by two is " + str(resultNum))
 
 #-=-=-=-=-=-Client command errors-=-=-=-=-=-=-=-
 
