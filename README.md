@@ -2,8 +2,12 @@
 <p align="center">
 	<img src="https://img.shields.io/badge/Made%20with-Python-yellow.svg" />
 </p>
-	
+
+---
+
 This is a simple template Discord bot, created using Discord.py
+
+---
 
 ## Getting Started
 First create your discord bot by creating an application, in the [discord developer portal](https://discordapp.com/developers/applications/), and then go under the bot section and create your bot.
